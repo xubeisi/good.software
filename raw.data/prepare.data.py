@@ -33,7 +33,11 @@ ap = argparse.ArgumentParser()
 ap.add_argument('input', help='CDR3 file from BCRSEQ')
 ap.add_argument('manual', help='CDR3 file from BCRSEQ')
 ap.add_argument('output', help='imrep  file with CDR3s')
+ap.add_argument('flag', help='flag for 0 - abstract, 1 - paper')
 args = ap.parse_args()
+
+
+flag=int(args.flag)
 
 
 
@@ -86,7 +90,7 @@ for line in reader:
         status_final=''
 
         if line[5]!='':
-            if line[5][len(line[5])-1].isdigit():
+            if line[5].isdigit() or line[5]=='-1':
 
                 journal = line[0]
                 year = int(line[2])
@@ -102,8 +106,7 @@ for line in reader:
 
 
 
-
-                if line[8] != '':
+                if line[8] != '' and (line[8].isdigit() or line[8]=='-1'):
                     link2=line[7]
                     #['PLoS_Comput_Biol', '19381256', '2009', 'null', 'http://purl.org/net/cito/',  '502', 'available',
                     # 'http://dx.doi.org/10.1371/journal.pntd.0000228.x001', '303']
@@ -139,16 +142,34 @@ for line in reader:
                             link_final = link1
                             status_final = classify_link(status1)
                             #print (status1,status2,classify_link(status1),classify_link(status2))
+
+                    if flag == 1: ### for body of papers
+                        linkSet.add(link2)
+                        dict_status[link2] = status2
+                        dict_year[link2] = year
+                        dict_journal[link2] = journal
+
                 else: # link is just one in the abstract
+
+                    if line[3]!="abstractNotFound" and line[8] != '':
+                        print (line)
                     link_final = link1
                     status_final = classify_link(status1)
 
+                    if flag==1: ### for body of papers
+                        linkSet.add(link1)
+                        dict_status[link1] = status1
+                        dict_year[link1] = year
+                        dict_journal[link1] = journal
+
 
                 #after we decided 1st or 2nsd link to use
-                linkSet.add(link_final)
-                dict_status[link_final] = status_final
-                dict_year[link_final] = year
-                dict_journal[link_final] = journal
+                if flag==0:
+                    linkSet.add(link_final)
+                    dict_status[link_final] = status_final
+                    dict_year[link_final] = year
+                    dict_journal[link_final] = journal
+
 
 statusSet=set()
 journalSet=set()
@@ -185,7 +206,9 @@ fileOut.write("link,status.detailed,status.general,journal,year\n")
 for l in linkSet:
 
 
+
     if dict_journal[l] in journalSet_currated:
+        year=dict_year[l]
         status=dict_status[l]
         type1=''
         type2=''
@@ -211,7 +234,7 @@ for l in linkSet:
 
 
 
-        fileOut.write(l+","+type1+","+type2+","+dict_journal[l]+","+str(dict_year[l]))
+        fileOut.write(l+","+type1+","+type2+","+dict_journal[l]+","+str(year))
         fileOut.write("\n")
 
 
@@ -222,15 +245,18 @@ print ("0 - timeout, -1 broken, 2 - redirection, 3 - good")
 
 fileOut.close()
 
+
+#--------------------------------
+# this is for Figure 1. The reason i did it, i was not aware how to do i tin R :)
 fileOut=open("Prc.abstract.links.per.journal.csv","w")
-fileOut.write("Journal, time,out,broken,good\n")
+fileOut.write("Journal,status\n")
 
 for key,value in dict2.items():
     sum=float(value[3])
     time_out=value[0]/sum
     broken=value[1]/sum
     good=value[2]/sum
-    fileOut.write(key+","+str(time_out)+","+str(broken)+","+str(good))
+    fileOut.write(key+",timeout,"+str(time_out)+","+str(broken)+","+str(good))
     fileOut.write("\n")
 
 fileOut.close()
