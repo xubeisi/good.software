@@ -1,24 +1,11 @@
-cd abstractLinks 
-grep "" *txt | awk '{if ($3!="" && $3!="NoLink") print}' | sed 's/_linkStatus.txt:/\t/' >../abstractLinks.prepared.tsv
-cd ..
+#Body
+awk '{if(NF<50) {for(i=1;i<=NF;i++) {printf "%s,", $i}; printf "\n"}}' bodyLinks.prepared.tsv | grep -v "$^" >bodyLinks.prepared.clean.csv
 
-cd bodyLinks
-grep "" *txt | awk '{if ($3!="" && $3!="NoLink") print}' | sed 's/_linkStatus.txt:/\t/' >../bodyLinks.prepared.tsv
+#Abstract
+awk '{if(NF<50) for(i=1;i<=NF;i++) {printf "%s,", $i}; printf "\n"}' abstractLinks.prepared.tsv | sed -v "^$" >abstractLinks.prepared.clean.csv
 
-cd ..
+# Prepare final file
 
-#abstracts ----
-awk '{print $1","$2","$3","$4","$5","$6","$7","$8","$9}' abstractLinks.prepared.tsv > abstractLinks.prepared.clean.tsv
-python prepare.data.py abstractLinks.prepared.clean.tsv ../manual.evaluation/manual.test.csv ../abstractLinks.csv 0
-
-#body links
-awk '{print $1","$2","$3","$4","$5","$6","$7","$8","$9}' bodyLinks.prepared.tsv >bodyLinks.prepared.clean.tsv
-python prepare.data.py bodyLinks.prepared.clean.tsv ../manual.evaluation/manual.test.csv ../bodyLinks.csv 1
+python prepare.data.py abstractLinks.prepared.clean.csv bodyLinks.prepared.clean.csv ../manual.evaluation/manual.test.csv ../links.bulk.csv 
 
 
-
-
-#separate analysis for abstract
-# separate for body
-# merge. filter based on Angela data
-# make sure not to have dublicates
