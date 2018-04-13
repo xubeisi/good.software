@@ -2,7 +2,7 @@
 
 This project contains the links to the datasets, and code that was used for our study "Software crisis in computational biology?  Towards a better usability and archival stability of bioinformatics software"
 
-For more information, [visit our wiki](./wiki)!
+For more information, [visit our wiki](https://github.com/smangul1/good.software/wiki)!
 
 
 ### Table of contents
