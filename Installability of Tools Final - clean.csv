@@ -1,0 +1,108 @@
+,ID,Domain,Journal,Year,Years till present,Code Language,Year of Latest Release,Source/Package,Open Source?,Source Control?,Reason tool cannot be installed,Number of citations,Normalized citations,Number of releases,Error. Hard codding. Broken invalid link. Yes/No,Too many dependencies. List how many,Tool is outdated. Yes/No,Tool relies on outdates dependencies,"How many commands were 
+ used to install the tools?","""How many installation commands were listed in the manual?""","How long did you take to install the tool?
+ 5: 0 - 5 min / 15: 5 - 15 min
+ 30: 15-30min / 60: 30 - 60 min
+ 120: 1 - 2 h / 120+: 2 or mor hours","Status : 
+ 2- easy to isntall, 
+ 1- hard to install, 
+ 0 - impossible to install",Was the example provided. yes or not,"Was there human interv ention? Was it possible to install tool just copy paste. Yes, No"
+1,mp1,mapping,Genome Biology,2009,10,C++,2017,BioConda,Y,Y,,11226,1122.6,30,N,N,N,N,4,3,5,2,Y,N
+2,mp2,mapping,Bioinformatics,2013,6,C++,2017,BioConda,Y,Y,,83,13.83333333,36,N,Y,N,N,7,5,5,2,Y,N
+3,mp3,mapping,Bioinformatics,2012,7,C++,2014,BioConda,Y,N,,36,5.142857143,16,N,N,N,N,4,3,5,2,Y,N
+4,mp4,mapping,Genome Biology,2004,15,C++,2017,BioConda,Y,N,,2448,163.2,7,N,N,N,N,4,3,5,2,Y,N
+5,mp5,mapping,Bioinformatics,2009,10,C,2011,BioConda,N,N,,2474,247.4,12,N,N,N,N,3,2,15,2,Y,N
+6,mp6,mapping,PLOS Comp Bio,2009,10,C++,2012,BioConda,Y,N,,572,57.2,21,N,N,N,N,3,4,5,2,Y,N
+7,mp7,mapping,Nature Genetics,2009,10,C,2014,BioConda,Y,N,,603,60.3,23,N,N,N,N,3,3,5,2,Y,N
+8,mp8,mapping,Bioinformatics,2008,11,C,2008,N,Y,N,,368,33.45454545,23,N,N,N,N,3,3,5,2,Y,Y
+9,mp9,mapping,Genome Biology,2013,6,C++,2016,YUM,Y,N,,41,6.833333333,17,N,Y,N,N,22,4,30,1,Y,Y
+10,mp10,mapping,Nature Methods,2015,4,C++,2017,Bioconda,Y,Y,,496,124,7,Y,N,N,N,7,3,30,1,Y,Y
+11,mb2,microbiome,Nature Methods,2010,9,Python,2017,source,Y,Y,,9531,1059,25,N,N,N,N,10,7,60,1,Y,N
+12,mb4,microbiome,PLoS One,2013,6,R,2017,Bioconductor,Y,Y,,954,159,not listed,N,N,N,Y,20,2,60,1,Y,Y
+13,mb6,microbiome,Computational Biology,2013,6,Python,2017,pip,Y,Y,,439,73.16666667,2,N,N,N,Y,12,10,60,1,Y,Y
+14,mb8,microbiome,Nature Methods,2015,4,Python,2017,BitBucket,Y,Y,,145,36.25,2,N,N,N,Y,30,10,120,1,Y,Y
+15,mb10,microbiome,Nature Methods,2013,6,R,2017,Bioconductor,Y,Y,,347,57.83333333,10,N,N,N,N,2,2,5,2,Y,Y
+16,mb1,microbiome,Appl Environ Microbiol,2009,10,C++,2017,Github,Y,Y,,7984,798.4,40,N,N,N,N,3,2,5,2,Y,Y
+17,mb3,microbiome,Nature Methods,2016,3,R,2017,Bioconductor,Y,Y,,108,36,5,N,12,N,N,23,2,120,1,Y,Y
+18,mb5,microbiome,Bioinformatics,2010,9,Python,2017,Drive5,Y,Y,,6148,683.1111111,10,N,N,N,N,2,2,5,2,Y,Y
+19,mb7,microbiome,Nature Biotechnology,2013,6,Python,2017,Github,Y,Y,,1298,216.3333333,3,N,N,N,N,12,3,30,1,Y,Y
+20,mb9,microbiome,Microb Ecol Healthy Dis,2015,4,R/python,2015/2016,Github,Y,Y,,65,16.25,1,N,8,N,N,8,6,60,1,Y,Y
+21,sn1,SNP,Nature,2009,10,Python,2012,N,Y,N,,147,14.7,6,N,N,N,N,13,13,15,2,Y,Y
+22,sn2,SNP,Bioinformatics,2012,7,Python,2016,SourceForge,Y,Y,Error on python when running example,159,22.71428571,11,N,Y,N,N,190,7,120,0,Y,Y
+23,sn3,SNP,?,?,#VALUE!,C++,2013,N,Y,N,,can't find paper,#VALUE!,4,N,Y,N,N,46,3,30,1,N,Y
+24,sn4,SNP,Genetic epidemiology,2010,9,C++,2011,N,Y,N,,1523,169.2222222,1,N,N,N,N,2,2,5,2,Y,N
+25,sn5,SNP,Genome Research,2011,8,C++,2010,N,Y,N,,125,15.625,1,Y,Y,Y,Y,52,No Doc,120,1,N,Y
+26,sn6,SNP,PLoS One,2012,7,C,2016,BitBucket,Y,Y,,5,0.7142857143,1,N,N,N,N,7,4,30,1,Y,Y
+27,sn7,SNP,BMC Bioinformatics,2009,10,Perl/R,2014,N,Y,N,,391,39.1,17,N,N,N,N,12,12,15,2,Y,Y
+28,poRe,Random,Bioinformatics,2015,4,R,2017,N,Y,Y,,51,12.75,18,N,N,N,N,4,4,15,2,Y,N
+29,CytoSEED,Random,Bioinformatics,2012,7,Java,2016,N,Y,N,Jar is missing value for entry Bundle-Activator,12,1.714285714,,N,N,Y,N,4,4,30,0,Y,N
+30,Rtreemix,Random,Bioinformatics,2008,11,R,2017,N,Y,Y,,11,1,40,N,N,N,N,2,2,15,2,Y,N
+31,DifferentialAnalysisMPP,Random,Bioinformatics,2012,7,Java,2012,N,Y,N,"no main manifest attribute, in DifferentialAnalysisMPP.jar after extraction and running all class files, no main function was found",2,0.2857142857,1,Y,N,N,Y,7,2,5,0,Y,Y
+32,GeneScissors,Random,Bioinformatics,2014,5,Python,2014,N,Y,Y,file bootstrap.sh tries to download package from http://csbio.unc.edu/gene_scissors/learning_model_all which does not exit,13,2.6,45,Y,N,N,N,11,4,15,0,Y,Y
+33,HMMER,Random,Bioinformatics,2013,6,C,2015,N,Y,Y,,80,13.33333333,18,N,N,N,N,5,5,15,2,Y,N
+34,RAIG,Random,Bioinformatics,2014,5,Python,2015,N,Y,Y,,16,3.2,2,N,N,N,N,5,3,30,1,Y,Y
+35,ABRA,Random,Bioinformatics,2014,5,Java,2016,N,Y,Y,,40,8,69,Y,N,N,N,4,3,15,2,Y,Y
+36,SYSBIONS,Random,Bioinformatics,2015,4,C,,N,Y,N,/usr/bin/ld: sysbions.o: undefined reference to symbol 'trunc@@GLIBC_2.2.5' //lib/x86_64-linux-gnu/libm.so.6: error adding symbols: DSO missing from command line collect2: error: ld returned 1 exit status Makefile:90: recipe for target 'sysbions' failed make: *** [sysbions] Error 1,10,2.5,,Y,N,N,N,7,7,15,0,Y,N
+37,Wgbssuite,Random,Bioinformatics,2015,4,R,2016,N,Y,Y,,12,3,4,N,N,N,N,6,6,15,2,Y,N
+38,ASSIsT,Random,Bioinformatics,2015,4,Python,2017,N,Y,N,,13,3.25,2,N,N,N,N,5,4,15,2,Y,Y
+39,HPG Aligner,Random,Bioinformatics,2014,5,C,2014,N,Y,Y,collect2: error: ld returned 1 exit status. scons: *** [lib/hpg-libs/bioinfo-libs/bioformats/features/region/test/parse_regions_vcf.test] Error 1. scons: building terminated because of errors.,15,3,2,Y,N,N,N,10,10,30,0,Y,N
+40,BCALM 2,Random,Bioinformatics,2016,3,C++,2017,N,Y,Y,,8,2.666666667,3,N,N,N,N,3,3,15,2,Y,Y
+41,AgIn,Random,Bioinformatics,2016,3,Scala,2014,N,Y,Y,,4,1.333333333,1,N,N,N,N,2,2,5,2,Y,N
+42,ClueGo,Random,Bioinformatics,2009,10,Java,2013,N,N,Y,,1241,124.1,16,N,N,N,N,0,0,5,2,N,Y
+43,NAViGaTOR,Random,Bioinformatics,2009,10,Java,2014,N,N,Y,,153,15.3,8,N,N,N,N,0,0,5,2,Y,N
+44,UniNovo,Random,Bioinformatics,2013,6,Java,N/A,N,N,N,,43,7.166666667,N/A,Y,N,N,N,2,1,15,2,N,Y
+45,viRome,Random,Bioinformatics,2013,6,R,2015,SourceForge,N,Y,Not available for R version 3.4.3,11,1.833333333,9,N,N,Y,Y,1,0,15,0,Y,Y
+46,Cyneo4j,Random,Bioinformatics,2015,4,Java,2015,Github,N,Y,,6,1.5,2,N,N,N,N,0,0,15,2,N,Y
+47,TADtool,Random,Bioinformatics,2016,3,Python,2016,Github,N,Y,,4,1.333333333,N/A,N,N,N,N,3,3,5,2,Y,N
+48,Phylesystem,Random,Bioinformatics,2015,4,Python,2017,Github,N,Y,,11,2.75,N/A,N,Y,N,N,7,7,15,2,Y,N
+49,HPG Aligner,Random,Bioinformatics,2014,5,C,2015,Github,N,Y,,15,3,2,N,N,N,N,7,7,15,2,N,N
+50,FamAgg,Random,Bioinformatics,2016,3,R,N/A,Bioconductor,Y,Y,,0,0,N/A,N,N,N,N,1,1,5,2,Y,N
+51,mDCC,Random,Bioinformatics,2016,3,C++/Python,2016,Github,N,Y,,2,0.6666666667,1,Y,N,N,N,5,3,30,0,Y,Y
+52,CNV-Seq,Structural_Variance,VMC Bioinformatics,2009,10,Perl/R,2014,Homepage,Y,N,,390,39,N/A,N,N,N,N,3,4,5,2,Y,N
+53,cn.MOPS,Structural_Variance,Nucleic Acids Research,2012,7,C++,2017,Bioconductor,Y,Y,,186,26.57142857,N/A,N,N,N,N,2,1,5,2,N,N
+54,Platypus,Structural_Variance,Nature Genetics,2013,6,Python/C,2015,N,Y,N,,258,43,N/A,N,N,N,N,5,1,120,1,Y,Y
+55,inGAP-SV,Structural_Variance,Nucleic Acids Research,2011,8,java,2014,SourceForge,Y,Y,,64,8,1,N,N,N,N,1,1,5,2,N,N
+56,Scalpel,Structural_Variance,Nature Methods,2014,5,perl/C++,2018,SourceForge,Y,Y,,80,16,N/A,N,N,N,N,2,No Doc,5,2,N,N
+57,SoftSearch,Structural_Variance,public library of science,2013,6,perl,2013,Homepage,Y,Y,,28,4.666666667,5,N,N,N,N,1,1,5,2,N,N
+58,BreaKmer,Structural_Variance,Nucleic Acids Research,2015,4,Python,2016,Github,Y,Y,,55,13.75,N/A,N,N,N,N,5,No Doc,30,1,N,Y
+59,SVMiner,Structural_Variance,PLoS One,2012,7,C++,2012,Homepage,Y,N,,17,2.428571429,N/A,N,N,N,N,2,No Doc,5,2,N,N
+60,GINDEL,Structural_Variance,PLoS One,2014,5,C++,2016,SourceForge,Y,Y,,8,1.6,N/A,N,N,N,N,5,No Doc,30,1,N,N
+61,MATCHCLIP,Structural_Variance,Frontiers in Genetics,2013,6,C++,2014,Github,Y,Y,,10,1.666666667,N/A,N,N,N,N,1,1,5,2,Y,N
+62,Fermikit,Structural_Variance,Bioinformatics,2015,4,C,2017,Github,Y,Y,,23,5.75,N/A,N,N,N,N,4,3,120,1,N,Y
+63,Samtools,Structural_Variance,Bioinformatics,2009,10,"c, java",2018,Github,Y,Y,,14509,1450.9,7,N,N,N,N,3,3,5,2,Y,N
+64,Genome STRiP,Structural_Variance,Nature Genetics,2011,8,,2017,Homepage,Y,N,,246,30.75,N/A,N,N,N,N,7,3,120,1,Y,Y
+65,indelMINER,Structural_Variance,BMC Bioinformatics,2015,4,c,2015,Github,Y,Y,,15,3.75,N/A,N,N,N,N,3,2,5,2,N,N
+66,SOAP-popindel,Structural_Variance,Nucleic Acids Research,2013,6,? (executable only),,N,N/A,N/A,,8,1.333333333,N/A,N,N,N,N,0,0,5,2,N,N
+67,HYDRA,Structural_Variance,Genome Research,2010,9,C++,2010,Homepage,Y,Y,,216,24,N/A,N,1,Y,N,4,N/A,120,0,N,Y
+68,GASV,Structural_Variance,Bioinformatics,2009,10,perl/java,2010,Compbio,Y,N,,151,15.1,N/A,N,N,N,N,4,2,120,1,Y,N
+69,BIC-seq2,Structural_Variance,Nucleic Acids Research,2016,3,perl/C,2016,Compbio,Y,N,,13,4.333333333,N/A,Y,N,N,N,4,N/A,120,0,N,Y
+70,SVMerge,Structural_Variance,Genome Biology,2012,7,perl,2012,SourceForge,Y,Y,,93,13.28571429,N/A,N,1,N,N,1,1,120,0,N,Y
+71,GASVPro,Structural_Variance,Genome Biology,2012,7,java,2012,Homepage,Y,Y,,114,16.28571429,N/A,N,N,N,N,1,1,5,2,Y,Y
+72,CNAseg,Structural_Variance,Bioinformatics,2010,9,N/A,N/A,broken link,N/A,N/A,,86,9.555555556,N/A,N,N,Y,N,N/A,N/A,120,0,Y,N/A
+73,JointSLM,Structural_Variance,Nucleic Acids Research,2011,8,R,2011,Homepage,Y,N,Windows and Mac only,58,7.25,N/A,N,N,N,N,N/A,3,120,0,N,Y
+74,Read-Depth (CND),Structural_Variance,Bioinformatics,2010,9,N/A,N/A,N,N/A,N,,46,5.111111111,N/A,N,N,Y,N,N/A,N/A,120,0,N,Y
+75,TIGRA,Structural_Variance,Genome Research,2014,5,C++,2013,Homepage,Y,N,,49,9.8,2,Y,N,N,N,N/A,1,120,0,Y,Y
+76,SplazerS,Structural_Variance,Bioinformatics,2012,7,N/A,N/A,N,N/A,N/A,,49,7,N/A,N,N,Y,N,N/A,N/A,120,0,N,Y
+77,ClipCrop,Structural_Variance,BMC Bioinformatics,2011,8,Javascript (node.js),2012,Github,Y,Y,Errors with node.js package manager,36,4.5,N/A,N,1,N,N,N/A,6,120,0,N,Y
+A78+1,SoftSV,Structural_Variance,Briefings in Bioinformatics,2016,3,C++,2016,SourceForge,Y,Y,Installation resulted in too many bugs to realistically fix,9,3,N/A,N,N,N,N,4,9,120,0,Y,Y
+77,tDindel,Structural_Variance,Genome Research,2011,8,C++,Download page no longer exists,N,N/A,N,Installation resulted in too many bugs to realistically fix,377,47.125,N/A,N,N,N,N,N/A,2,5,0,N,Y
+77,piCALL,Structural_Variance,Bioinformatics,2011,8,C,2013,Homepage,N/A,N,Tool is deprecated and has been replaced by CRISP,11,1.375,N/A,N,N,N,N,N/A,N/A,5,0,N,Y
+77,iSVP,Structural_Variance,BMC Systems Biology,2013,6,Python,2013,Homepage,N/A,N,Python argtools module cannot be installed locally,20,3.333333333,N/A,N,1,N,N,N/A,No Doc,120,0,Y,Y
+77,SV-Bay,Structural_Variance,Bioinformatics,2016,3,Python,2017,Github,Y,Y,Too many python modules required,10,3.333333333,N/A,N,2,N,N,6,9,120,0,Y,Y
+77,PEMer,Structural_Variance,Genome Biology,2009,10,Python/Perl,N/A,Homepage,Y,N,Too much file manipulation,89,8.9,N/A,Y,1,N,N,14,14,120,0,Y,Y
+77,BreakSeq2,Structural_Variance,Nature Biotechnology,2009,10,python,N/A,Homepage,Y,N,Too much file manipulation,236,23.6,N/A,Y,N,N,N,N/A,N/A,30,0,Y,Y
+77,MoDIL,Structural_Variance,Nature Methods,2009,10,Python,2012,Compbio,Y,N,Too much file manipulation,242,24.2,6,Y,N,N,N,N/A,7,120,0,Y,Y
+77,Meerkat,Structural_Variance,Cell,2013,6,Perl,2013,Compbio,Y,N,"Used the troubleshooting specified in their site for the error, but didn't work",,0,N/A,Y,N,N,N,N/A,29,120,0,N,Y
+77,NovelSeq,Structural_Variance,Bioinformatics,2010,9,C++,2010,SourceForge,Y,Y,too many parameters,95,10.55555556,N/A,Y,N,N,N,N/A,No Doc,5,2,N,N
+77,Splitread,Structural_Variance,Nature Methods,2011,8,C,2011,SourceForge,Y,Y,Solution on their website failed,98,12.25,N/A,Y,N,N,N,N/A,1,5,2,N,N
+77,PRISM,Structural_Variance,Bioinformatics,2012,7,C++,2012,Homepage,Y,N,not all functions are present that are in documentation,73,10.42857143,N/A,Y,N,N,N,N/A,4,120,1,Y,Y
+77,SOAPindel,Structural_Variance,Genome Research,2013,6,Perl,2014,Homepage,Y,N,,73,12.16666667,9,N,N,N,N,1,1,5,2,Y,N
+77,Melt,Structural_Variance,Genome Research,2017,2,Java,2017,Homepage,Y,N,,4,2,9,N,N,N,N,2,2,5,2,N,Y
+77,PopIns,Structural_Variance,Bioinformatics,2015,4,C++,2017,Github,Y,Y,,9,2.25,-,N,N,N,N,12,12,120,1,Y,Y
+77,SRiC,Structural_Variance,BMC Genomics,2011,8,N/A,N/A,N,N/A,N/A,,N/A,#VALUE!,N/A,N,N,N,N,N/A,N/A,N/A,N/A,N/A,N/A
+77,Spanner,Structural_Variance,Bioinformatics,2013,6,C++,,Homepage,Y,N,,10,1.666666667,-,N,N,N,N,3,3,5,2,N,N
+77,Amplicon Indel Hunter,Structural_Variance,Journal of Molecular Diagnostics,2015,4,Python,2017,Github,Y,Y,,13,3.25,-,N,N,N,N,1,1,5,2,Y,N
+77,CNVer,Structural_Variance,Genome Research,2010,9,c++/python/perl,2010,Github,Y,Y,No Documentation/Makefile failed,N/A,#VALUE!,2,N,N,Y,N,10,3,120,0,Y,Y
+77,CLEVER,Structural_Variance,Bioinformatics,2012,7,C++,2018,BitBucket,Y,Y,,,0,,,,,,3,3,120,1,N,N
+77,Varscan,Structural_Variance,Bioinformatics,2009,10,Jav,2015,sourceforge,Y,Y,,763,76.3,2,N,N,N,N,1,1,5,2,Y,N
+77,Sniffles,Structural_Variance,Nature Methods,2018,1,,2018,Github,Y,Y,,3,3,0,N,N,N,N,9,9,5,2,Y,N
+77,Delly,Structural_Variance,Bioinformatics,2012,7,,2018,Github,Y,Y,,530,75.71428571,,N,N,N,N,1,1,5,3,N,N
